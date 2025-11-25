@@ -1,12 +1,12 @@
 
 
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation, useParams , useSearchParams } from "react-router-dom";
 
 
 function Profile(){
 
-    const location = useLocation()
-    console.log("location",location)
+    const [searchParams,setSearchParams] = useSearchParams()
+    console.log("searchparam",searchParams.get('name'))
 
     let {username} = useParams()
     return(

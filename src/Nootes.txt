@@ -74,7 +74,23 @@ we used it in our profile component
 
 *you can extract pathName , search params etc from location object   
 
+---searchParams
 
+*useSearchParams is use to get the search params
+*search param are key value followed by '?' for example 
+'profile/ahmed?username=muhammadahmed'
+
+here 'username=muhammadahmed' is search querry param
+
+* just like useState useSearchParams RETURN AN ARRAY
+*we destructure it to searchParams and setSearchParam
+
+*searchParams goesnot give searchParams value
+*instead searchParams.get(searchParamsname) is passed
+*we pass 'searchParamsname' to .get method 
+*like in our example we will  use :
+
+     searchParams.get(username)
 
 
 
