@@ -1,7 +1,7 @@
 import React from 'react';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import { useNavigate } from 'react-router-dom';
 const { Header, Content, Footer } = Layout;
-
 
 const items = [
     {
@@ -13,9 +13,15 @@ const items = [
         key:"/profile"
     }
 ]
+
+
+
+
+
 const AppLayout = ({children}) => {
 
-    console.log(children)
+
+   const navigate = useNavigate()
 
   const {
     token: { colorBgContainer, borderRadiusLG },
@@ -33,7 +39,10 @@ const AppLayout = ({children}) => {
         }}
       >
         <div className="demo-logo" />
-        <Menu 
+        <Menu onClick={(data)=>{
+            console.log(data)
+            navigate(data.key)
+        }}
           theme="dark"
           mode="horizontal"
           defaultSelectedKeys={['2']}

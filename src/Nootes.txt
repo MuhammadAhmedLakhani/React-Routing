@@ -14,3 +14,23 @@ itself and manages routing from there
 
 
 ---If you make another componnet and nested it with another compoent you can do it within Route component inside index.jsx(router folder) 
+
+
+--routing from clicking
+
+*we want to make the menu of the antdesign to navigate with our click
+*in this situation always look for end points of api in our case antdesign api
+
+*menu inside layout has endpoint onClick which is a call back function it will return the data related to click like key layout etc
+
+
+
+* usually reatc router has link component for routing 
+*but for dynamic routing another hook is required which is 
+useNavigate
+*useNavigate returns a function
+*the function requies the path to which to take from current position 
+*we get the path from data.key (data is object we get from onClick endpoint given by antd)
+
+
+
