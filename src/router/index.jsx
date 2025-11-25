@@ -5,6 +5,9 @@ import AppLayout from '../components/Layout.jsx';
 import NotFound from '../components/NotFound.jsx';
 import LoginApp from '../components/Login.jsx';
 
+
+
+
 function AppRouter(){
     return(
          <BrowserRouter>
@@ -12,7 +15,9 @@ function AppRouter(){
                 <Route path='/' element = {<LoginApp/>} />
                 <Route  path='/home' element = { <AppLayout><Home/></AppLayout> } />
                 {/* <Route  path='/profile' element = {<Profile/>} /> */}
-                <Route path='/profile' element = {<AppLayout><Profile/></AppLayout>} />
+                <Route path='/profile/:username' element = {<AppLayout><Profile/></AppLayout>} />
+
+
                 <Route path='*' element = {<NotFound/>} />
             </Routes>
          </BrowserRouter>

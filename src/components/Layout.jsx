@@ -43,6 +43,8 @@ const AppLayout = ({children}) => {
 
         <div style={{display:'flex',width:'100%',gap:'40px'}}>
 
+            
+
             <Link to={'/home'} ><span style={{color:"#fff"}}>Home</span></Link>
 
             <Link to={'/profile'}><span style={{color:"#fff"}}>Profile</span></Link>

@@ -51,3 +51,30 @@ and use Link to link them to relevant pages
 
 you can link the back to home button with Link component as well
 
+--dynamic  routing through pathName
+
+*for instance in profile path  we also want to know that which user profile we are in 
+
+*for this purpose we add '/:username' in path prop along with '/profile'
+
+*'/:username'  sets the key of the parameters and whatever is passed after '/profile/' will be stor in 'username' key
+
+*for getting the username value we would need another hook called useParams 
+
+*useParams return object od the all parameters/values with specific key*in our case the key is username
+
+*we destructure the object return by useParams hook
+
+we used it in our profile component
+
+
+--location hook (uselocation)
+
+*useLocation returns an object which contain info about location 
+
+*you can extract pathName , search params etc from location object   
+
+
+
+
+
