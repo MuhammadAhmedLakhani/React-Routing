@@ -92,5 +92,10 @@ here 'username=muhammadahmed' is search querry param
 
      searchParams.get(username)
 
+ --etting useSearchParams 
+
+ *first need to call searchParams.set() method and provide key and value to it 
+ *then call setSearchParam to update the value    
+
 
 

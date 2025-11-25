@@ -12,6 +12,10 @@ function Profile(){
     return(
         <div>
             <h1>Profile Page ({username}) </h1>
+            <button onClick={()=>{
+                searchParams.set("name","saylani")
+                setSearchParams(searchParams)
+            }} >SetSearch Param</button>
         </div>
     )
 }
