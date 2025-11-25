@@ -1,0 +1,13 @@
+---browser router
+
+
+
+*browser router is parent component and made by react-router-dom 
+itself and manages routing from there
+*browser router followed by <Routes> component 
+*BrowserRouter and Routes comes first time only while Route component can be multiple 
+
+*inside Route component path prop is given with value of path you want to define
+*path prop is followed by element prop in which you define component to be shown on that path
+
+*/home will take you to home page as Home component is linked  here
