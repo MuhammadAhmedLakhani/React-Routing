@@ -1,6 +1,6 @@
 import React from 'react';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 const { Header, Content, Footer } = Layout;
 
 const items = [
@@ -13,6 +13,7 @@ const items = [
         key:"/profile"
     }
 ]
+
 
 
 
@@ -39,7 +40,16 @@ const AppLayout = ({children}) => {
         }}
       >
         <div className="demo-logo" />
-        <Menu onClick={(data)=>{
+
+        <div style={{display:'flex',width:'100%',gap:'40px'}}>
+
+            <Link to={'/home'} ><span style={{color:"#fff"}}>Home</span></Link>
+
+            <Link to={'/profile'}><span style={{color:"#fff"}}>Profile</span></Link>
+            
+        </div>
+
+        {/* <Menu onClick={(data)=>{
             console.log(data)
             navigate(data.key)
         }}
@@ -48,7 +58,7 @@ const AppLayout = ({children}) => {
           defaultSelectedKeys={['2']}
           items={items}
           style={{ flex: 1, minWidth: 0 }}
-        />
+        /> */}
       </Header>
       <Content style={{ padding: '0 48px' }}>
         <Breadcrumb

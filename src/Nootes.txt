@@ -32,5 +32,12 @@ useNavigate
 *the function requies the path to which to take from current position 
 *we get the path from data.key (data is object we get from onClick endpoint given by antd)
 
+--Link componnet
 
 
+*link ancher(a tag) in html and window.loction in javascript there are two ways to link the component
+*Link is another component given by react-router dom 
+*<Link> is use for static linking pages
+*here we remove our menu and replace it with our own designed one 
+and use Link to link them to relevant pages
+*Link component get 'to'  props which requires path name as its value
