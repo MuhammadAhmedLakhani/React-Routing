@@ -41,3 +41,11 @@ useNavigate
 *here we remove our menu and replace it with our own designed one 
 and use Link to link them to relevant pages
 *Link component get 'to'  props which requires path name as its value
+
+
+---wrong path
+
+*there is a possiblity that user might enter a wrong path 
+*to handle this we add another Route component and pass stric (*) as the path value and in elelment we define what to show if wrong path is given
+*we have added NotFound component in element to show it when user enter a wrong path
+
